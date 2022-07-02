@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head></head>
+
+<body>
+    <script>
+        let sout;
+        sout = "<table border='1' width='300' cellspacing='0' cellpadding='3'>"
+        for (i = 1; i <= 10; i++) {
+            sout = sout + "<tr>";
+            for (j = 1; j <= 10; j++) {
+                sout = sout + "<td>" + i * j + "</td>";
+            }
+            sout = sout + "</tr>";
+        }
+        sout = sout + "</table>";
+        document.write(sout);
+    </script>
+</body>
+<body>
+    <script language="javascript">
+        //thay bằng while
+        let sour, i, j;
+        sour = "<table border='1' width='300' cellspacing='0' cellpadding='3'>";
+        i = j = 1;
+        while (i <= 10) {
+            sour = sour + "<tr>";
+            while (j <= 10) {
+                sour = sour + "<td>" + i * j + "</td>";
+                j++;
+            }
+            sour = sour + "</tr>";
+            j = 1;
+            i++;
+        }
+        sour = sour + "</table>";
+        document.write(sour);
+    </script>
+</body>
+
+</html>
